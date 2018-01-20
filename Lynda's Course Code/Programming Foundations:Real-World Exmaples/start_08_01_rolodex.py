@@ -21,4 +21,14 @@ print(rolodex['David'])
 # tuple can be nested on the dictionary
 rolodex['Erdogan'] = (5551223, 'QA', 'Colorado')
 
-print(rolodex)
+print(rolodex.items())
+
+def caller_look_up(caller_id):
+    for name, number in rolodex.items():
+        if number == caller_id:
+            print(name)
+
+
+
+caller_look_up(5556969)
+
